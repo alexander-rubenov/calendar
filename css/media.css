@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+    .calendar-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar-header div span {
+        width: 60vw;
+    }
+}

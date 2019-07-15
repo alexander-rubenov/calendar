@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 4vh;
+}
+
+.calendar {
+    width: 91vw;
+    margin: 0 auto;
+    border: .3vw solid #dadce0;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-item {
+    border: .05vw solid #dadce0;
+    padding: 1vh 1vw;
+    height: 10vh;
+}
+
+.calendar-item-last-month {
+    color: #aaaaaa;
+}
+
+.calendar-item-next-month {
+    color: #aaaaaa;
+}
+
+.calendar-item-days-of-week {
+    padding: 0;
+    text-align: center;
+    --height-calendar-item-days-of-week: 6vh;
+    height: var(--height-calendar-item-days-of-week);
+    line-height: var(--height-calendar-item-days-of-week);
+}
+
+.calendar-header {
+    width: 91vw;
+    margin: 0 auto;
+    font-size: 150%;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-triangle {
+    width: 0;
+    height: 0;
+    border-top: 1vh solid transparent;
+    border-right: 2vh solid #1d1d1d;
+    border-bottom: 1vh solid transparent;
+}
+
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-top: 1vh solid transparent;
+    border-left: 2vh solid #1d1d1d;
+    border-bottom: 1vh solid transparent;
+}
+
+.calendar-header div {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-header div span {
+    width: 15vw;
+    text-align: center;
+}
